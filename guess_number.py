@@ -1,8 +1,12 @@
 import random
-r = random.randint(1,100)
+m = input('Please input the minimum of the range you gotta guess: ')
+m = int(m)
+M = input('Please input the maximum of the range you gotta guess: ')
+M = int(M)
+r = random.randint(m,M)
 t = 0
 while True:
-	num = input('Input a number from 1~100 to see how fast you make it to a correct guess: ')
+	num = input('Please input a number from the range above and see how fast you can guess correctly: ')
 	num = int(num)
 	t = t + 1
 	if num == r:
